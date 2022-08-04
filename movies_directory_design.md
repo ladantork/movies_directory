@@ -68,8 +68,13 @@ CREATE TABLE favorite_movies (
   id SERIAL PRIMARY KEY,
   title text,
   genre text,
-  release_year int
-INSERT INTO favorite_movies(id, title, genre, release_year) VALUES (1, queen, drama, 2000));
+  release_year int);
+select * from favorite_movies;
+
+INSERT INTO favorite_movies(title, genre, release_year) VALUES (queen, drama, 2000);
+
+select * from favorite_movies;
+
 ```
 
 ## 5. Create the table.
